@@ -4,6 +4,11 @@
 <head>
     <title>#</title>
     <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=PT+Sans+Narrow:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -12,18 +17,9 @@
         <h1>I struggle a little with these topics: The Box Model and Flow Of HTML. So I want to make a little hint for
             me to make these topics easier to understand.</h1>
         <h2>What do I cover: </h2>
-        <nav>
+        <nav id="nav2">
             <ol>
-                <h3>The box model. What is it?</h3>
-                <li>Advantages of using the selector "border-radius"</li>
-                <li>Margin collaps</li>
-                <li>Overflow and how we can work with it</li>
-                <li>Box sizing: border-box</li>
-                <li>Short review</li>
-            </ol>
-        </nav>
-        <nav>
-            <ol>
+                <h1>Working on*</h1>
                 <h3>Flow of HTML. What is it?</h3>
                 <li>Selector "positon"</li>
                 <li>What position can we assign to an element?</li>
@@ -33,6 +29,16 @@
                 <li>How can we use it?</li>
             </ol>
         </nav>
+        <nav id="nav1">
+            <ol>
+                <h3>The box model. What is it?</h3>
+                <li>Advantages of using the selector "border-radius"</li>
+                <li>Margin collaps</li>
+                <li>Overflow and how we can work with it</li>
+                <li>Box sizing: border-box</li>
+                <li>Short review</li>
+            </ol>
+        </nav>
         <aside>
             <p>* Translated text in Russian will be here because my english not so good and these topics are very
                 important
@@ -40,7 +46,7 @@
         </aside>
     </header>
     <main>
-        <selector class="box-model">
+        <section class="box-model">
             <h4>The box model. What is it?</h4>
             <article>
                 <p>There are four parameters that each HTML element has: content, padding, border and margin. To
@@ -51,7 +57,9 @@
                     (this is the border attribute). The box itself is in the center of the room at some distance from
                     the
                     other boxes. This given distance is called the margin.
-                    <br>(У каждого элемента HTML есть 3 параметра: контент, падинг, границы и маржин. Чтобы понять эти
+                </p>
+                <p class="translated-text">У каждого элемента HTML есть 3 параметра: контент, падинг, границы и маржин.
+                    Чтобы понять эти
                     атрибуты
                     просто представим коробку в комнате, где много таких коробок. Каждая коробка - это HTML тег, коробка
                     содержит какой-то контент. Контент не облегает плотно все стенки коробки, значит, между контентом и
@@ -76,8 +84,8 @@
                 <div id="box-one">content</div>
                 <div id="box-two">content</div>
             </div>
-        </selector>
-        <selector id="box-model-borderRadius-selector">
+        </section>
+        <section id="box-model-borderRadius-selector">
             <h4>Advantages of using the selector "border-radius"</h4>
             <article>
                 <p>We can modify the corners of an element's border box by using this selector. We can also make a
@@ -93,8 +101,8 @@
                 <div class="blue">content</div>
                 <div class="pink">content</div>
             </div>
-        </selector>
-        <selector class="box-model-margin-collaps">
+        </section>
+        <section class="box-model-margin-collaps">
             <h4>Margin collaps. What is it?</h4>
             <article>
                 <p>Let's say there are three other blocks in one div block. There is a 20 pixel padding between them.
@@ -102,41 +110,44 @@
                     padding separately, and instead of adding these 20 pixels of padding (as we specified for all
                     blocks) with these 60 pixels of padding specifically for the second block, this does not happen.
                     This 60px padding overlaps the 20px padding.
-                    <br>
+                </p>
+                <p class="translated-text">
                     Допустим в одном блоке див три других блока. Между ними отступ в 20 пикселей. Предположим, что у
                     второго блока отступ должен быть 60 пикселей сверху. Мы ставим ему отдельно этот отступ и вместо
                     того, чтобы сложить эти 20 пикселей отступа (как мы указали для всех блоков) с этими 60 пикселями
                     отступа специально для второго блока, этого не происходит. Этот отступ в 60 пикселей перекрывает
                     отступ в 20 пикселей.
                 </p>
-                <aside>
-                    <p>Right below we can see an example! We can see that the margin of the top and bottom of the second
-                        element is exactly 60px, even though I set all of these elements to have a margin of 20px.
-                        <br>Прямо ниже мы можем увидеть пример! Мы видим, что поля сверху и снизу второго элемента
-                        составляют ровно 60 пикселей, хотя я установил для всех этих элементов поля равные 20 пикселей.
-                    </p>
-                </aside>
-                <div id="margin-collaps">
-                    <div class="first-block">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat. Egestas
-                            purus viverra accumsan in nisl nisi scelerisque eu ultrices.</p>
-                    </div>
-                    <div class="second-block">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices
-                            vitae
-                            auctor eu. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse.</p>
-                    </div>
-                    <div class="third-block">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Pulvinar mattis nunc sed blandit. Cras
-                            adipiscing enim eu turpis egestas pretium aenean pharetra.</p>
-                    </div>
-                </div>
             </article>
-        </selector>
-        <selector id="box-model-overflow">
+            <aside>
+                <p>Right below we can see an example! We can see that the margin of the top and bottom of the second
+                    element is exactly 60px, even though I set all of these elements to have a margin of 20px.
+                    <span class="translated-text">Прямо ниже мы можем увидеть пример! Мы видим, что поля сверху и снизу
+                        второго элемента
+                        составляют ровно 60 пикселей, хотя я установил для всех этих элементов поля равные 20
+                        пикселей.</span>
+                </p>
+            </aside>
+            <div id="margin-collaps">
+                <div id="first-block">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat. Egestas
+                        purus viverra accumsan in nisl nisi scelerisque eu ultrices.</p>
+                </div>
+                <div id="second-block">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices
+                        vitae
+                        auctor eu. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse.</p>
+                </div>
+                <div id="third-block">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Pulvinar mattis nunc sed blandit. Cras
+                        adipiscing enim eu turpis egestas pretium aenean pharetra.</p>
+                </div>
+            </div>
+        </section>
+        <section id="box-model-overflow">
             <h4>Overflow. What is it? How we can fix this?</h4>
             <article>
                 <p>Sometimes it happens that the text gets out of the block in which it is located. It can be not only
@@ -147,7 +158,8 @@
                     hidden. In the second case, a scroll bar is added so that we can fully view this element. In the
                     third
                     case, the text will be visible despite the fact that it goes beyond the block.</p>
-                <p>Иногда случается так, что текст вылезает за рамки блока в котором он находится. Это может быть не
+                <p class="translated-text">Иногда случается так, что текст вылезает за рамки блока в котором он
+                    находится. Это может быть не
                     только
                     текст, но и изображение, видео и т.д. Мы можем контролировать эти случае использовав селектор
                     overflow.
@@ -184,8 +196,8 @@
                     tincidunt ornare massa eget egestas.</p>
             </div>
             <p>On the left we applied the overflow selector, and on the right we did not apply it</p>
-        </selector>
-        <selector id="box-sizing">
+        </section>
+        <section id="box-sizing">
             <h4>Selector box-sizing with value border-box. What does it mean?</h4>
             <article>
                 <p>This is one of the properties that should be set by default, since it does not allow the element to
@@ -195,7 +207,8 @@
                     It guarantees the preservation of the specified proportions of width and height. For example, if the
                     width is 500 pixels and we use padding, then in any case the element will remain 500 pixels in size,
                     even with a high padding value.</p>
-                <p>Это одно из свойств, которые следует ставить по умолчанию, так как оно не позволяет увеличение
+                <p class="translated-text">Это одно из свойств, которые следует ставить по умолчанию, так как оно не
+                    позволяет увеличение
                     элемента больше допустимого. Например, использовав селектор padding есть вероятность увеличить
                     элемент, так как если содержимое подойдёт слишком близко к границам блока, блок должен расширить эти
                     границы. Селектор box-sizing со значением border-box этого не позволяет. Он гарантирует сохранение
@@ -227,14 +240,15 @@
                     't
                     set the height/width value, then because of the huge value of padding text/any other element
                     will stretch this not set value.</p>
-                <p>Я поэкспериментировал и выяснил, если задать width и height и поставить сумасшедее значение padding,
+                <p class="translated-text">Я поэкспериментировал и выяснил, если задать width и height и поставить
+                    сумасшедее значение padding,
                     то элемент останется такого же размера, но текст выйдет за его рамки. Тогда нам и пригодится
                     селектор overflow, который позволит остаться тексту/какому-то элементу в рамках блока. Если же мы не
                     выставили значение height/width, то из-за огромного значения padding текст/любой другой элемент
                     будет растягивать это невыставленное значение.</p>
             </div>
-        </selector>
-        <selector id="review">
+        </section>
+        <section id="review">
             <h4>Short review of all answers</h4>
             <table>
                 <tr>
@@ -258,7 +272,7 @@
                         the text or image can still go outside the block. To do this, we have the overflow selector</td>
                 </tr>
             </table>
-        </selector>
+        </section>
     </main>
 </body>
 

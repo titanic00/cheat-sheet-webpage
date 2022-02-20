@@ -1,5 +1,12 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
 body {
     text-align: center;
+    background-color: azure;
+    font-size: 20px;
 }
 
 body ol {
@@ -8,12 +15,40 @@ body ol {
     padding-right: 30px;
 }
 
+#nav2 {
+    width: 700px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
 header {
     margin-bottom: 100px;
 }
 
+.translated-text {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+h4 {
+    font-size: 36px;
+    background-color: aqua;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: 700;
+    border: 10px solid #002347;
+}
+
+section {
+    margin: 50px;
+    border-bottom: 10px solid blue;
+}
+
 main {
     margin: 0px 200px;
+    border: 10px solid blue;
 }
 
 .box {
@@ -89,19 +124,19 @@ main {
     margin: 20px auto;
 }
 
-#margin-collaps .first-block {
+#margin-collaps #first-block {
     background-color: pink;
     width: 500px;
 }
 
-#margin-collaps .second-block {
-    background-color: rgb(245, 47, 47);
+#margin-collaps #second-block {
+    background-color: red;
     width: 500px;
     margin: 60px auto;
 }
 
-#margin-collaps .third-block {
-    background-color: orange;
+#margin-collaps #third-block {
+    background-color: orange !important;
     width: 500px;
 }
 
@@ -112,7 +147,7 @@ main {
     border: 5px solid blue;
     overflow: scroll;
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 294px;
 }
 
 .text-without-overflow {
@@ -127,10 +162,11 @@ main {
     width: 200px;
     height: 200px;
     padding: 50px;
+    margin-bottom: 295px;
     overflow: scroll;
     box-sizing: border-box;
     display: inline-block;
-    background-color: rgb(141, 230, 8)
+    background-color: greenyellow;
 }
 
 #testing-box-sizing-selector #without {
@@ -138,7 +174,7 @@ main {
     height: 200px;
     padding: 50px;
     display: inline-block;
-    background-color: yellow
+    background-color: yellow;
 }
 
 table,
