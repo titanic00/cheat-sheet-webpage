@@ -19,6 +19,7 @@
                 <li>Margin collaps</li>
                 <li>Overflow and how we can work with it</li>
                 <li>Box sizing: border-box</li>
+                <li>Short review</li>
             </ol>
         </nav>
         <nav>
@@ -138,8 +139,100 @@
         <selector id="box-model-overflow">
             <h4>Overflow. What is it? How we can fix this?</h4>
             <article>
-                
+                <p>Sometimes it happens that the text gets out of the block in which it is located. It can be not only
+                    text, but also an image, video, etc. We can control these cases by using the overflow selector.
+                    There
+                    are three parameters: hidden/scroll/visible . In the first case, the element outside the block will
+                    be
+                    hidden. In the second case, a scroll bar is added so that we can fully view this element. In the
+                    third
+                    case, the text will be visible despite the fact that it goes beyond the block.</p>
+                <p>Иногда случается так, что текст вылезает за рамки блока в котором он находится. Это может быть не
+                    только
+                    текст, но и изображение, видео и т.д. Мы можем контролировать эти случае использовав селектор
+                    overflow.
+                    Есть три параметра: hidden/scroll/visible . В первом случае элемент за рамками блока будет скрыт. Во
+                    втором случае добавляется полоса прокрутки, чтобы мы могли полностью просмотреть этот элемент. В
+                    третьем
+                    случае текст будет виден несмотря на то, что он выходит за рамки блока.</p>
             </article>
+            <aside>
+                <p>There is an example right below: </p>
+            </aside>
+            <div class="text-overflow">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Fermentum et sollicitudin ac orci phasellus egestas. Netus et malesuada
+                    fames
+                    ac
+                    turpis egestas maecenas. Etiam erat velit scelerisque in dictum. Ullamcorper velit sed
+                    ullamcorper
+                    morbi
+                    tincidunt ornare massa eget egestas.</p>
+            </div>
+            <div class="text-without-overflow">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Fermentum et sollicitudin ac orci phasellus egestas. Netus et malesuada
+                    fames
+                    ac
+                    turpis egestas maecenas. Etiam erat velit scelerisque in dictum. Ullamcorper velit sed
+                    ullamcorper
+                    morbi
+                    tincidunt ornare massa eget egestas.</p>
+            </div>
+            <p>On the left we applied the overflow selector, and on the right we did not apply it</p>
+        </selector>
+        <selector id="box-sizing">
+            <h4>Selector box-sizing with value border-box. What does it mean?</h4>
+            <article>
+                <p>This is one of the properties that should be set by default, since it does not allow the element to
+                    be enlarged more than allowed. For example, using the padding selector, there is a chance to
+                    increase the element, since if the content comes too close to the boundaries of the block, the block
+                    must expand these boundaries. The box-sizing selector with the border-box value does not allow this.
+                    It guarantees the preservation of the specified proportions of width and height. For example, if the
+                    width is 500 pixels and we use padding, then in any case the element will remain 500 pixels in size,
+                    even with a high padding value.</p>
+                <p>Это одно из свойств, которые следует ставить по умолчанию, так как оно не позволяет увеличение
+                    элемента больше допустимого. Например, использовав селектор padding есть вероятность увеличить
+                    элемент, так как если содержимое подойдёт слишком близко к границам блока, блок должен расширить эти
+                    границы. Селектор box-sizing со значением border-box этого не позволяет. Он гарантирует сохранение
+                    заданных пропорций width и height. Например, если width 500 пикселей и мы используем padding, то в
+                    любом случае элемент останется размером в 500 пикселей, даже при высоком значении padding.</p>
+            </article>
+            <aside>
+                <p>There is an example: </p>
+            </aside>
+            <div id="testing-box-sizing-selector">
+                <div id="with">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Tincidunt dui ut ornare lectus sit amet est placerat in.
+                        Tincidunt nunc pulvinar sapien et ligula. Pretium nibh ipsum consequat nisl vel pretium. Aliquam
+                        vestibulum morbi blandit cursus risus at.
+
+                    </p>
+                </div>
+                <div id="without">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ac felis donec et odio pellentesque diam volutpat commodo. Odio
+                        euismod lacinia at quis. Turpis egestas pretium aenean pharetra magna ac placerat. Sed odio
+                        morbi quis commodo odio aenean.</p>
+                </div>
+                <p>I experimented and found out if I set width and height and set a crazy padding value,
+                    then the element will remain the same size, but the text will go beyond it. Then it will come in
+                    handy for us
+                    the overflow selector, which will allow the text/some element to remain within the block. If we don
+                    't
+                    set the height/width value, then because of the huge value of padding text/any other element
+                    will stretch this not set value.</p>
+                <p>Я поэкспериментировал и выяснил, если задать width и height и поставить сумасшедее значение padding,
+                    то элемент останется такого же размера, но текст выйдет за его рамки. Тогда нам и пригодится
+                    селектор overflow, который позволит остаться тексту/какому-то элементу в рамках блока. Если же мы не
+                    выставили значение height/width, то из-за огромного значения padding текст/любой другой элемент
+                    будет растягивать это невыставленное значение.</p>
+            </div>
         </selector>
     </main>
 </body>

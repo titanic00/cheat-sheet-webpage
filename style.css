@@ -104,3 +104,39 @@ main {
     background-color: orange;
     width: 500px;
 }
+
+.text-overflow {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid blue;
+    overflow: scroll;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.text-without-overflow {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid blue;
+    display: inline-block;
+}
+
+#testing-box-sizing-selector #with {
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    overflow: scroll;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: rgb(141, 230, 8)
+}
+
+#testing-box-sizing-selector #without {
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    display: inline-block;
+    background-color: yellow
+}
