@@ -1,0 +1,106 @@
+body {
+    text-align: center;
+}
+
+body ol {
+    display: table;
+    margin: auto;
+    padding-right: 30px;
+}
+
+header {
+    margin-bottom: 100px;
+}
+
+main {
+    margin: 0px 200px;
+}
+
+.box {
+    border: 10px solid brown;
+    margin: 0px auto;
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.box #box-one {
+    color: yellow;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    margin: 10px 0px 0px 30px;
+}
+
+.box #box-two {
+    color: black;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin: 45px 50px 0px 0px;
+}
+
+#circles .red {
+    display: inline-block;
+    color: red;
+    background-color: red;
+    border: 5px solid green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#circles .green {
+    display: inline-block;
+    color: green;
+    background-color: green;
+    border: 5px solid blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#circles .blue {
+    display: inline-block;
+    color: blue;
+    background-color: blue;
+    border: 5px solid pink;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#circles .pink {
+    display: inline-block;
+    color: pink;
+    background-color: pink;
+    border: 5px solid red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#margin-collaps * {
+    margin: 20px auto;
+}
+
+#margin-collaps .first-block {
+    background-color: pink;
+    width: 500px;
+}
+
+#margin-collaps .second-block {
+    background-color: rgb(245, 47, 47);
+    width: 500px;
+    margin: 60px auto;
+}
+
+#margin-collaps .third-block {
+    background-color: orange;
+    width: 500px;
+}

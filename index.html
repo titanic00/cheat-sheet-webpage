@@ -8,23 +8,21 @@
 
 <body>
 
-    <head>
+    <header>
         <h1>I struggle a little with these topics: The Box Model and Flow Of HTML. So I want to make a little hint for
             me to make these topics easier to understand.</h1>
         <h2>What do I cover: </h2>
         <nav>
-            <ul>
+            <ol>
                 <h3>The box model. What is it?</h3>
-                <li>Advantages to use selector border-radius</li>
-                <li>Padding and margin. The difference</li>
-                <li>When should we use margin auto instead text-align selector to center an object?</li>
+                <li>Advantages of using the selector "border-radius"</li>
                 <li>Margin collaps</li>
                 <li>Overflow and how we can work with it</li>
                 <li>Box sizing: border-box</li>
-            </ul>
+            </ol>
         </nav>
         <nav>
-            <ul>
+            <ol>
                 <h3>Flow of HTML. What is it?</h3>
                 <li>Selector "positon"</li>
                 <li>What position can we assign to an element?</li>
@@ -32,11 +30,117 @@
                 <li>What display can we assign to an element?</li>
                 <li>Selectors "float" and "clear"</li>
                 <li>How can we use it?</li>
-            </ul>
+            </ol>
         </nav>
-    </head>
+        <aside>
+            <p>* Translated text in Russian will be here because my english not so good and these topics are very
+                important
+                to understand</p>
+        </aside>
+    </header>
     <main>
-        
+        <selector class="box-model">
+            <h4>The box model. What is it?</h4>
+            <article>
+                <p>There are four parameters that each HTML element has: content, padding, border and margin. To
+                    understand
+                    these attributes we can imagine a simple box contains some content, this content is located at some
+                    distance from the walls of the box (this is the padding attribute) and this box itself has red
+                    outlines
+                    (this is the border attribute). The box itself is in the center of the room at some distance from
+                    the
+                    other boxes. This given distance is called the margin.
+                    <br>(У каждого элемента HTML есть 3 параметра: контент, падинг, границы и маржин. Чтобы понять эти
+                    атрибуты
+                    просто представим коробку в комнате, где много таких коробок. Каждая коробка - это HTML тег, коробка
+                    содержит какой-то контент. Контент не облегает плотно все стенки коробки, значит, между контентом и
+                    стенками коробки(границами) есть какое-то пространство. Оно называется паддинг. Мы можем его менять
+                    как
+                    душе угодно, меняя паддинг, контент будет находится дальше от стенок(границ) коробки. Коробка может
+                    быть
+                    обрамлена, например, в красный цвет). Расстояние между другими коробками (HTML элементами) мы тоже
+                    можем
+                    задать, как и в реально жизни, мы можем передвинуть коробку подальше, или поближе. Это расстояние
+                    между
+                    другими HTML элементами называется маржин
+                </p>
+            </article>
+            <div>
+                <img src="./recourses/images/the-box-model.jpg" />
+            </div>
+            <aside>
+                <p>I practiced changing these options (padding, border, margin) inside the div block:</p>
+            </aside>
+            <div class="box">
+                <div id="box-one">content</div>
+                <div id="box-two">content</div>
+            </div>
+        </selector>
+        <selector id="box-model-borderRadius-selector">
+            <h4>Advantages of using the selector "border-radius"</h4>
+            <article>
+                <p>We can modify the corners of an element's border box by using this selector. We can also make a
+                    circle!
+                    To do this, we just need to assign a value of 50%</p>
+            </article>
+            <aside>
+                <p>What a beatiful circles I've done! :D</p>
+            </aside>
+            <div id="circles">
+                <div class="red">content</div>
+                <div class="green">content</div>
+                <div class="blue">content</div>
+                <div class="pink">content</div>
+            </div>
+        </selector>
+        <selector class="box-model-margin-collaps">
+            <h4>Margin collaps. What is it?</h4>
+            <article>
+                <p>Let's say there are three other blocks in one div block. There is a 20 pixel padding between them.
+                    Let's assume that the second block should have a padding of 60px from the top. We give it this
+                    padding separately, and instead of adding these 20 pixels of padding (as we specified for all
+                    blocks) with these 60 pixels of padding specifically for the second block, this does not happen.
+                    This 60px padding overlaps the 20px padding.
+                    <br>
+                    Допустим в одном блоке див три других блока. Между ними отступ в 20 пикселей. Предположим, что у
+                    второго блока отступ должен быть 60 пикселей сверху. Мы ставим ему отдельно этот отступ и вместо
+                    того, чтобы сложить эти 20 пикселей отступа (как мы указали для всех блоков) с этими 60 пикселями
+                    отступа специально для второго блока, этого не происходит. Этот отступ в 60 пикселей перекрывает
+                    отступ в 20 пикселей.
+                </p>
+                <aside>
+                    <p>Right below we can see an example! We can see that the margin of the top and bottom of the second
+                        element is exactly 60px, even though I set all of these elements to have a margin of 20px.
+                        <br>Прямо ниже мы можем увидеть пример! Мы видим, что поля сверху и снизу второго элемента
+                        составляют ровно 60 пикселей, хотя я установил для всех этих элементов поля равные 20 пикселей.
+                    </p>
+                </aside>
+                <div id="margin-collaps">
+                    <div class="first-block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat. Egestas
+                            purus viverra accumsan in nisl nisi scelerisque eu ultrices.</p>
+                    </div>
+                    <div class="second-block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices
+                            vitae
+                            auctor eu. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse.</p>
+                    </div>
+                    <div class="third-block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Pulvinar mattis nunc sed blandit. Cras
+                            adipiscing enim eu turpis egestas pretium aenean pharetra.</p>
+                    </div>
+                </div>
+            </article>
+        </selector>
+        <selector id="box-model-overflow">
+            <h4>Overflow. What is it? How we can fix this?</h4>
+            <article>
+                
+            </article>
+        </selector>
     </main>
 </body>
 
